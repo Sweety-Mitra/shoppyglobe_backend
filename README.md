@@ -93,5 +93,3 @@ This project was developed as part of an academic backend development assignment
 - MongoDB database integration
 - Clean project structure and error handling
 - API testing and documentation
-
----

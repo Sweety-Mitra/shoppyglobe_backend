@@ -1,16 +1,19 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const connectDB = require("./config/db"); 
+const connectDB = require("./config/db");
 
-// Load environment variables
 dotenv.config();
-
-// Connect MongoDB
 connectDB();
 
 const app = express();
 app.use(express.json());
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
+// Routes
+app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/cart", require("./routes/cartRoutes"));
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () =>
+  console.log(`Server running on port ${PORT}`)
+);
