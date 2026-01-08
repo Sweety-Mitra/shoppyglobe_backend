@@ -100,3 +100,8 @@ This project was developed as part of an academic backend development assignment
 1. npm install
 2. create .env
 3. node server.js
+
+----
+
+## GitHub Repository
+🔗 **Repository**: [https://github.com/Sweety-Mitra/shoppyglobe_backend]
