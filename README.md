@@ -93,3 +93,10 @@ This project was developed as part of an academic backend development assignment
 - MongoDB database integration
 - Clean project structure and error handling
 - API testing and documentation
+
+---
+
+### How to Run
+1. npm install
+2. create .env
+3. node server.js
